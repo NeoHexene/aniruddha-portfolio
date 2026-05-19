@@ -1,6 +1,38 @@
-export const personal = {};
+// Personal Information
+export const personal = {
+    name: "Aniruddha Khandekar",
+    title: "Software Engineer",
+    taglines: [
+        "Software Engineer",
+        "Full Stack Developer",
+        "MSCS @ USC"
+    ],
+    location: "Los Angeles, CA",
+    email: "ak21771@usc.edu",
+    // phone: "+1 (323) 220-5939",
+    github: "https://github.com/NeoHexene",
+    linkedin: "https://linkedin.com/in/aniruddha30/",
+    resume: "/resume/Aniruddha_Khandekar_Resume.pdf",
+    bio: "Master's student in Computer Science at USC, passionate about building scalable backend systems and intelligent applications. Previously built enterprise-grade fintech microservices at Intellect Design Arena."
+};
 
-export const education = [];
+// List of educations
+export const education = [
+    {
+        school: "University of Southern California",
+        degree: "Master of Science in Computer Science",
+        period: "Aug 2025 – May 2027",
+        location: "Los Angeles, CA",
+        gpa: "3.42 / 4.0",
+    },
+    {
+        school: "University of Mumbai",
+        degree: "Bachelor of Engineering in Computer Engineering",
+        period: "Jul 2019 – May 2023",
+        location: "Mumbai, India",
+        gpa: "3.75 / 4.0",
+    }
+];
 
 // List of experiences
 export const experience = [
@@ -27,7 +59,7 @@ export const experience = [
             "Developed and tested Arduino-based embedded programs with C/C++ in Arduino IDE.",
             "Assembled and optimized robotics kits used by students, simplifying complex technical concepts.",
         ],
-        tags: ["C/C++", "Arduino", "Embedded Systems"],
+        tags: ["C / C++", "Arduino", "Embedded Systems"],
     }
 ];
 
@@ -93,7 +125,7 @@ export const projects = [
     }
 ];
 
-// Map of different lists of skillsets. 
+// Map skills with respect to their categories.
 export const skills = {
     Languages: [
         { name: "Java", level: 93 },
