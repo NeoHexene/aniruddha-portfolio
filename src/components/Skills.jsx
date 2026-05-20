@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { skills } from "../data/portfolio";
+import { skills, familiars } from "../data/portfolio";
 
 const categoryColors = {
     Languages: "#00f5ff",
@@ -110,7 +110,7 @@ export default function Skills() {
                         Also familiar with
                     </p>
                     <div className="flex flex-wrap justify-center gap-3">
-                        {["Unity", "C#", "Azure"].map((tech) => (
+                        {familiars.map((tech) => (
                             <span key={tech} className="tag-pill"> {tech} </span>
                         ))}
                     </div>

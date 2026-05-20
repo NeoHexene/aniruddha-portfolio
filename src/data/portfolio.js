@@ -87,13 +87,13 @@ export const projects = [
         color: "#a855f7",
         icon: "🔍",
         gradient: "from-purple-500/20 to-pink-600/20",
-        highlights: ["Geocoding API", "External Event API Integration", "GCP", ""]
+        highlights: ["Geocoding API", "External Event API Integration"]
     },
     {
         id: 3,
         name: "Tic Tac Toe",
         description: "AI driven, responsive Tic-Tac-Toe supporting PvP and PvAI modes. Implements Minimax algorithm for optimal AI moves. Uses Reducer + Custom Hooks architecture for time-travel and undo / redo features.",
-        tags: ["React", "TypeScript", "Vite", "Minimax AI"],
+        tags: ["React", "TypeScript", "Minimax AI"],
         github: "https://github.com/NeoHexene/Tic-Tac-Toe",
         youtubeId: "TsJbLFxsGIo",
         color: "#f59e0b",
@@ -159,3 +159,7 @@ export const skills = {
         { name: "Docker / Kubernetes", level: 75 }
     ]
 };
+
+export const familiars = [
+    "Unity", "C++", "C#", "Azure"
+];
