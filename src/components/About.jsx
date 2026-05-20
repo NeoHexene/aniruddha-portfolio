@@ -33,7 +33,7 @@ export default function About() {
                 <div className="w-16 h-0.5 bg-[#00f5ff] mx-auto mt-4" />
             </div>
 
-            <div className="grid md:grid-cols">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
                 {/* Left Section */}
                 <div className="reveal space-y-6">
                     {/* Profile Card */}

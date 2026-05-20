@@ -12,7 +12,7 @@ export const personal = {
     // phone: "+1 (323) 220-5939",
     github: "https://github.com/NeoHexene",
     linkedin: "https://linkedin.com/in/aniruddha30/",
-    resume: "/resume/Aniruddha_Khandekar_Resume.pdf",
+    resume: `${import.meta.env.BASE_URL}resume/Aniruddha_Khandekar_Resume.pdf`,
     bio: "Master's student in Computer Science at USC, passionate about building scalable backend systems and intelligent applications. Previously built enterprise-grade fintech microservices at Intellect Design Arena."
 };
 
@@ -132,8 +132,7 @@ export const skills = {
         { name: "Python", level: 85 },
         { name: "JavaScript", level: 85 },
         { name: "TypeScript", level: 85 },
-        { name: "SQL", level: 88 },
-        { name: "C / C++ / C#", level: 70 }
+        { name: "SQL", level: 88 }
     ],
     Backend: [
         { name: "Spring Boot", level: 90 },
@@ -151,9 +150,7 @@ export const skills = {
         { name: "Oracle / PostgresSQL", level: 88 },
         { name: "MySQL", level: 80 },
         { name: "MongoDB", level: 70 },
-        { name: "GCP", level: 75 },
-        { name: "AWS", level: 60 },
-        { name: "Azure", level: 65 }
+        { name: "GCP", level: 75 }
     ],
     "Tools & Practices": [
         { name: "Git / GitHub", level: 90 },

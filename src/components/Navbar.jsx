@@ -1,8 +1,8 @@
-import LinkedinIcon from "./LinkedinIcon"
-import GithubIcon from "./GithubIcon"
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-import { personal } from "../data/portfolio"
+import LinkedinIcon from "./LinkedinIcon";
+import GithubIcon from "./GithubIcon";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { personal } from "../data/portfolio";
 
 const navLinks = [
     { label: "About", href: "#about" },
