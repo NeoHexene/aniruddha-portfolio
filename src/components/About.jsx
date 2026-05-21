@@ -2,6 +2,10 @@ import { useEffect, useRef } from "react";
 import { MapPin, GraduationCap, Code2 } from "lucide-react";
 import { personal, education } from "../data/portfolio";
 
+const profileFiles = import.meta.glob('/public/profile/profile.*', { query: '?url', eager: true });
+const profilePicKey = Object.keys(profileFiles)[0];
+const profilePicUrl = profilePicKey ? profileFiles[profilePicKey].default || profilePicKey.replace('/public', '') : null;
+
 export default function About() {
 
     const ref = useRef(null);
@@ -38,8 +42,12 @@ export default function About() {
                 <div className="reveal space-y-6">
                     {/* Profile Card */}
                     <div className="relative w-48 h-48 mx-auto md:mx-0">
-                        <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-[#00f5ff]/20 to-blue-600/20 border border-[#00f5ff]/30 flex items-center justify-center text-7xl select-none">
-                            👨‍💻
+                        <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-[#00f5ff]/20 to-blue-600/20 border border-[#00f5ff]/30 flex items-center justify-center text-7xl select-none overflow-hidden">
+                            {profilePicUrl ? (
+                                <img src={profilePicUrl} alt="Profile" className="w-full h-full object-cover" />
+                            ) : (
+                                <span>👨‍💻</span>
+                            )}
                         </div>
                         <div className="absolute -bottom-3 -right-3 w-48 h-48 rounded-2xl border border-[#00f5ff]/20 -z-10" />
                     </div>
