@@ -23,7 +23,7 @@ export const education = [
         degree: "Master of Science in Computer Science",
         period: "Aug 2025 – May 2027",
         location: "Los Angeles, CA",
-        gpa: "3.42 / 4.0",
+        gpa: "3.54 / 4.0",
     },
     {
         school: "University of Mumbai",
