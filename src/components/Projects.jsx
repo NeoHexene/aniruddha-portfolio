@@ -114,6 +114,17 @@ export default function Projects() {
                                 <div className="flex items-start justify-between mb-2">
                                     <h3 className="font-display text-base font-bold text-white">{p.name}</h3>
                                     <div className="flex items-center gap-3 ml-2 shrink-0">
+                                        {p.liveLink && (
+                                            <a
+                                                href={p.liveLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-slate-500 hover:text-red-500 transition-colors"
+                                                title="Live Demo"
+                                            >
+                                                <span className="text-[9px] font-code font-bold tracking-wide relative -top-0.5">LIVE</span>
+                                            </a>
+                                        )}
                                         {p.youtubeId && (
                                             <a
                                                 href={`https://youtu.be/${p.youtubeId}`}

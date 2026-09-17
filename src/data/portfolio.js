@@ -9,7 +9,7 @@ export const personal = {
     ],
     location: "Los Angeles, CA",
     email: "ak21771@usc.edu",
-    // phone: "+1 (323) 220-5939",
+    // phone: "",
     github: "https://github.com/NeoHexene",
     linkedin: "https://linkedin.com/in/aniruddha30/",
     resume: `${import.meta.env.BASE_URL}resume/Aniruddha_Khandekar_Resume.pdf`,
@@ -37,6 +37,18 @@ export const education = [
 // List of experiences
 export const experience = [
     {
+        role: "Web Developer (Student)",
+        company: "Dornsife Technology Services (USC)",
+        location: "Los Angeles, California",
+        period: "July 2026 - Present",
+        bullets: [
+            "Built and maintained a web-based student award management system that supports application submissions, faculty recommendations, administrative review, award decisions, document uploads, and email communication.",
+            "Created reusable interfaces for faculty searches, application tables, status management, bulk administrative actions, and editable award-letter templates.",
+            "Connected responsive JavaScript interfaces with ColdFusion CFC endpoints and SQL Server stored procedures to deliver validated, transaction-safe application workflows."
+        ],
+        tags: ["JavaScript", "ColdFusion", "jQuery", "AJAX", "SQL"]
+    },
+    {
         role: "Software Engineer",
         company: "Intellect Design Arena Ltd.",
         location: "Mumbai, India",
@@ -48,7 +60,7 @@ export const experience = [
             "Engineered a high-performance Rule Engine using a custom orchestration framework achieving 70% faster processing with reduced human intervention compared to legacy calculators.",
             "Collaborated in Agile environment with sprint planning, code reviews, unit testing, and CI/CD-driven deployments.",
         ],
-        tags: ["Java", "Spring Boot", "Microservices", "Oracle", "PostgreSQL", "REST APIs"],
+        tags: ["Java", "Spring Boot", "Microservices", "Oracle", "PostgreSQL", "REST APIs"]
     },
     {
         role: "Robotics Kit Developer Intern",
@@ -59,7 +71,7 @@ export const experience = [
             "Developed and tested Arduino-based embedded programs with C/C++ in Arduino IDE.",
             "Assembled and optimized robotics kits used by students, simplifying complex technical concepts.",
         ],
-        tags: ["C / C++", "Arduino", "Embedded Systems"],
+        tags: ["C / C++", "Arduino", "Embedded Systems"]
     }
 ];
 
@@ -114,6 +126,30 @@ export const projects = [
     },
     {
         id: 5,
+        name: "Midnight Magnet",
+        description: "A browser-playable Unity WebGL game built around a magnet mechanic, exported straight from Unity and hosted on GitHub Pages for instant play, no install required.",
+        tags: ["Unity", "C#", "WebGL", "Game Dev"],
+        youtubeId: "SeTHuA65Kds",
+        github: "https://github.com/NeoHexene/Midnight-Magnet",
+        liveLink: "https://neohexene.github.io/Midnight-Magnet/",
+        color: "#6366f1",
+        icon: "🧲",
+        gradient: "from-indigo-500/20 to-violet-600/20",
+        highlights: ["Magnet Mechanic", "Browser Playable", "Unity WebGL Export"]
+    },
+    {
+        id: 6,
+        name: "AR - ATM",
+        description: "AR-enabled ATM prototype pairing an ESP8266-based physical dispenser with a mobile AR app. Users point their phone camera at the machine to see a virtual keypad overlaid on screen, enter their PIN there, and the ESP8266 validates it and triggers a servo to dispense cash.",
+        tags: ["Augmented Reality", "Arduino", "IoT", "ESP8266"],
+        github: "https://github.com/NeoHexene/AR-ATM",
+        color: "#84cc16",
+        icon: "🏧",
+        gradient: "from-lime-500/20 to-green-600/20",
+        highlights: ["Contactless Withdrawals"]
+    },
+    {
+        id: 7,
         name: "Patient Record Management",
         description: "Web-based patient management system with role-based authentication for admins and patients. Implements appointment scheduling, patient record management, and room allocation.",
         tags: ["PHP", "MySQL", "JavaScript", "HTML", "XAMPP"],
